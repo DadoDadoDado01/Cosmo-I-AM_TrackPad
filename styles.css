@@ -1,0 +1,71 @@
+.gradient-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 160px;
+  background: linear-gradient(
+    to top,
+    rgb(160, 215, 255) -50%,
+    rgba(255, 140, 140, 0)
+  );
+  pointer-events: none; /* Non interferisce con il canvas */
+}
+body {
+  height: 100svh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff00;
+}
+.header {
+  width: 600px;
+  height: 70px;
+  background-color: white;
+  border-radius: 80px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  font-family: "Hoefler Text", serif;
+  position: absolute;
+
+  margin-top: 20px;
+}
+
+.left {
+  font-size: 22pt;
+  color: rgb(180, 180, 180);
+  font-weight: normal;
+  position: absolute;
+  left: 25px;
+  top: 20px;
+}
+
+.right {
+  font-size: 22pt;
+  color: rgb(180, 180, 180);
+  font-weight: normal;
+  position: absolute;
+  right: 25px;
+  top: 20px;
+}
+
+.left:hover,
+.right:hover {
+  color: black; /* Cambia il colore del testo in nero quando passi sopra */
+  cursor: pointer; /* Cambia il cursore in una mano per indicare che è interattivo */
+}
+
+.logo {
+  height: 50px; /* Altezza del logo (puoi modificarla) */
+  rotate: 30°;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-5%) rotate(-25deg); /* Centra e ruota il logo */
+}
